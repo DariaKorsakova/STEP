@@ -1,0 +1,10 @@
+body {
+  font-family: 'Mulish-Bold', 'Mulish-Medium', 'Mulish-Light', 'Mulish-ExtraLight',sans-serif;
+  color: #18191F;
+  box-sizing: border-box;
+  background-color: #ffff;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
