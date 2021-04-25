@@ -1,0 +1,205 @@
+
+
+.new-furniture 
+     width: 1170px
+     margin: 120px auto
+     display: flex 
+     flex-wrap: wrap 
+     justify-content: space-between
+     align-items: center
+    
+     #line
+         height: 4px 
+         width: 90px
+         background-color: #303032
+         margin-top: 7px
+     .title_new 
+         display: flex 
+         flex-wrap: wrap 
+         flex-direction: column
+         align-content: center
+         justify-content: center
+     h2
+         text-transform: uppercase
+         font: $font-PlayDisp-lg
+         font-size: 28px
+     p
+         font: $font-OpenSans-md
+         &:hover
+             cursor: pointer
+     span
+         font: $font-OpenSans-lg
+         font-size: 28px
+     &__left
+         width: 570px
+         display: flex
+         flex-wrap: wrap
+         justify-content: space-between
+         
+         &-block
+             width: 270px
+             display: flex
+             flex-direction: column
+             align-items: center
+             justify-content: space-between
+             background-color: #FFFFFF
+             box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+             cursor: pointer
+             padding: 8px 0
+             overflow-x: hidden
+             p 
+                 padding-bottom: 10px
+             &:nth-last-child(-n+2)
+                 margin-top: 37px
+             &:nth-last-child(1):hover, &:nth-last-child(1):active, &:nth-last-child(1):focus                
+                 background-color: #FAECE9    
+
+                
+     &__right
+         overflow: hidden
+         .chair_white
+             display: flex
+             flex-wrap: wrap 
+             padding: 20px 37px 28px 43px
+             flex-direction: column
+             align-items: center
+             justify-content: space-evenly
+             background-color: #FFFFFF
+             box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+             img
+                 padding-bottom: 29px
+             p 
+                 padding-bottom: 7px  
+         p:hover
+             cursor: pointer
+
+.block
+    margin: 0 auto
+    width: 653px
+    display: flex
+    flex-wrap: wrap 
+    flex-direction: column
+    align-items: center
+    margin-bottom: 132px
+    img    
+         padding-bottom: 25px
+    h4
+         padding-bottom: 10px
+         font: $font-OpenSans-lg
+         font-size: 18px
+         font-weight: 700
+    span
+          padding-bottom: 20px
+          font: $font-OpenSans-sm
+    p
+        font: $font-OpenSans-sm
+        font-style: italic
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+
+.slider-arrow 
+    position: absolute
+    width: 35px
+    height: 35px
+    z-index: 99
+
+.slider-arrow
+     cursor: pointer
+     &__left 
+         background: url(../img/left-arrow.svg) center no-repeat
+         background-color: #FFFFFF
+         left: 30%
+         top: 32% 
+         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+         border-radius: 50%
+
+     &__right
+         background: url(../img/right-arrow.svg) center no-repeat
+         background-color: #FFFFFF
+         right: 30%
+         top: 32%
+         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+         border-radius: 50%
+         
+
+.comments
+     .slick-dots
+         display: flex
+         flex-direction: row
+         position: absolute
+         width: 5px
+         left: 50%
+         margin-left: -40px
+         top: 80%
+     .slick-active  
+         right: 0px
+         padding: 0
+         content: ''
+         background: url(../img/activ_dots.svg) center no-repeat 
+     a
+         padding-right: 0
+         border-right:  0    
+     li
+         margin-bottom: 0
+         height: 20px
+     .slick-dots li button
+         width: 9px
+     .slick-dots li button:before  
+         width: 9px
+         padding: 0
+         content: ''
+         background: url(../img/dots.svg) center no-repeat 
+         
+.last_chance 
+     width: 1170px
+     margin: 0 auto
+     display: flex
+     flex-direction: column 
+     flex-wrap: wrap 
+     #line
+         height: 4px 
+         width: 90px
+         background-color: #303032
+         margin-top: 7px
+         margin-bottom: 37px
+     .title 
+         display: flex 
+         flex-direction: column
+         justify-content: center
+     h2
+         text-transform: uppercase
+         font: $font-PlayDisp-lg
+         font-size: 28px 
+     .types  
+         display: flex 
+         width: 275px
+         justify-content: space-between
+         padding-bottom: 25px
+         a
+             font: $font-OpenSans-lg 
+             font-size: 16px
+             color: rgba(0, 0, 0, 0.4)
+             cursor: pointer
+             text-decoration: none
+             &:hover, &:focus
+                 color: #09080c	
+                 text-decoration-line: underline
+                 transition: .3s
+     .chairs
+         display: flex 
+         width: 1170px  
+         justify-content: space-between
+         &_block
+             width: 209px
+             height: 355px
+             overflow: hidden
+             display: flex 
+             flex-direction: column 
+             background-color: #FFFFFF
+             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+
+  
+
+
+

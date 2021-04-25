@@ -1,0 +1,302 @@
+/* медиа запросы */
+    
+@media screen and (max-width: 1920px)
+     .container-1
+         background: linear-gradient(to right, #F9FDFF 63.1%,  #FCEAE8 48%)
+
+@media screen and (max-width: 1440px)
+     .container-1
+         background: linear-gradient(to right, #F9FDFF 59.8%,  #FCEAE8 48%)
+     .slick-dots
+         margin-left: 120px
+     .slider-arrow
+         &__left 
+             left: 20%
+         &__right
+             right: 20%
+         
+
+@media screen and (max-width: 1024px)
+     .container, .header-menu  
+        width: 900px
+     .container-1
+        width: 900px
+        background: linear-gradient(to right, #F9FDFF 59.1%,  #FCEAE8 48%)
+        img
+             height: 500px
+     .title 
+        width: 400px !important
+     h2
+        font-size: 45px !important
+     .slick-dots
+         top: 15%
+     .new-furniture 
+         width: 950px    
+         overflow-x: hidden   
+         h2
+             font-size: 25px !important
+         &__left
+             width: 450px
+             &-block
+                 width: 220px
+                 padding: 12px 0
+                 &:nth-last-child(-n+2)
+                     margin-top: 20px
+         &__right
+             .chair_white
+                 padding: 20px 0 28px 0
+     .slider-arrow
+         &__left 
+             left: 15%
+         &__right
+             right: 15%
+
+
+@media screen and (max-width: 768px)
+     .container, .header-menu  
+         width: 650px
+     .container-1 
+         width: 650px
+         background: linear-gradient(to right, #F9FDFF 59.2%,  #FCEAE8 48%)
+         img
+             height: 410px
+     .Furniture-header  
+         width: 350px 
+         &__menu
+            width: 290px 
+     .title 
+         width: 260px !important
+     h2
+         font-size: 40px !important
+     .slick-dots
+         margin-left: 90px
+         top: 15% 
+     .new-furniture 
+         width: 600px
+         padding-left: 30px
+         &__left
+             width: 570px
+             &-block
+                 width: 270px
+         &__right
+             margin-top: 20px
+             .chair_white
+                 padding: 20px 37px 28px 43px
+     .block
+         width: 550px
+     .slider-arrow
+         &__left 
+             left: 10%
+         &__right
+             right: 10%
+
+@media screen and (max-width: 425px) 
+     #btn-menu + label
+         display: inline-block
+         padding-top: 8px 
+         z-index: 2 
+
+     #btn-menu + label + .Furniture-header__menu
+         display: none
+         background-color: #303032
+         
+              
+     #btn-menu:checked + label + .Furniture-header__menu
+         height: 568px
+         display: flex
+         flex-direction: column
+         justify-content: center
+         padding: 0 155px 0 155px 
+
+     .Furniture-header__menu > li > a
+         color: #FFFFFF
+         font: $font-OpenSans-md
+         display: block
+         padding-bottom: 65px
+
+             
+     .Furniture-header__menu > li 
+         display: block
+        
+     .container, .header-menu 
+         width: 350px
+         padding-top: 23px
+         padding-bottom: 0 
+             
+     .Furniture-header 
+         width: 350px
+       
+         &__menu
+             position: absolute 
+             width: 110px 
+             right: 0
+             top: 0
+             margin-top: -10px
+             z-index: 1
+         &__right
+             position: absolute
+             right: 0
+             margin-right: 120px 
+         a:hover, a:focus
+             color: #ffff
+             text-decoration-line: underline
+             transition: .3s
+     .your-class
+         margin-top: 20px
+     .container-1 
+         width: 350px
+         background: none
+         h2
+             font-size: 40px !important
+         img
+             height: 372px
+             order: -1
+             padding-top: 50px
+             padding-right: 0
+             background: linear-gradient(to right, #F9FDFF 59.2%,  #FCEAE8 48%)
+         .title 
+             height: 360px
+             padding-right: 127px
+             background-color: #F9FDFF
+         button
+             width: auto  !important
+                 
+     
+     .slick-dots
+         display: flex
+         flex-direction: row
+         position: absolute
+         width: 40px
+         top: 97%
+         left: 50%
+         margin-left: -100px
+        
+         li
+             margin-right: 20px
+             width: 40px
+
+     .slick-active  
+         position: absolute
+         right: 0
+         bottom: 15px
+         font: $font-OpenSans-md
+         font-size: 30px
+
+         a
+             padding-bottom: 15px
+             border: none
+             border-bottom:  2px solid #000000
+     .new-furniture 
+         width: 410px
+         padding: 0
+         padding-left: 8px
+         &__left
+             width: 400px
+             &-block
+                 width: 195px
+         &__right
+              padding: 20px 37px 28px 43px
+     .block
+         display: none
+     .comments
+         display: none    
+ 
+
+         
+
+@media screen and (max-width: 375px)
+     #btn-menu + label + .Furniture-header__menu
+         display: none
+         background-color: #303032
+     #btn-menu:checked + label + .Furniture-header__menu
+         padding: 0 135px 0 135px 
+         margin: 0
+
+     .Furniture-header 
+         width: 340px 
+         &__menu
+             margin-right: 20px
+     .container-1 
+         width: 340px
+         img
+             height: 340px
+             order: -1
+             padding-top: 50px
+             padding-right: 15px
+             background: linear-gradient(to right, #F9FDFF 59.2%,  #FCEAE8 48%)
+         .title 
+             height: 360px
+             background-color: #F9FDFF
+             padding-right: 115px
+             button
+                 width: auto !important
+     .new-furniture 
+         width: 340px
+         padding-left: 8px
+         justify-content: center
+         #line
+             margin-bottom: 39px
+         &__left
+             width: 340px
+             justify-content: center
+             &-block
+                 width: 288px
+                 height: 299px
+                 overflow: hidden
+         &__right
+             padding: 0
+             .chair_white
+                 padding: 0
+                 padding-bottom: 16px
+                 text-align: center
+                 img
+                      padding: 0 40px
+             
+
+@media screen and (max-width: 320px)
+     #btn-menu:checked + label + .Furniture-header__menu
+         padding: 0 105px 0 105px 
+
+     .Furniture-header 
+         width: 290px 
+         &__menu
+             margin-right: 20px
+     .container, .header-menu  
+         width: 290px
+     .container-1 
+         width: 290px
+         img
+             height: 296px
+             order: -1
+             padding-top: 50px
+             padding-right: 10px
+             background: linear-gradient(to right, #F9FDFF 59.2%,  #FCEAE8 48%)
+         .title 
+             height: 320px
+             padding-right: 53px
+             h2
+                  font-size: 30px !important
+     .new-furniture 
+         width: 290px
+         padding-left: 8px
+         justify-content: center
+         #line
+             margin-bottom: 39px
+         &__left
+             width: 290px
+             justify-content: center
+             &-block
+                 width: 270px
+                 height: 299px
+                 overflow: hidden
+         &__right
+             padding: 0
+             .chair_white
+                 padding: 0
+                 padding-bottom: 16px
+                 text-align: center
+                 img
+                      padding: 0 30px
+
+
+
