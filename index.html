@@ -16,11 +16,11 @@
             <div class="header-menu">
                 <div class="Furniture-header">
                     <div class="Furniture-header__logo">
-                        <a href="#"> <img src="img/logo.svg" alt="Logo"></a>     
+                        <a href="#"> <img src="img/logo.svg" alt="Logo"></a>
                     </div>
                     <input type="checkbox" id="btn-menu" />
                         <label for="btn-menu"></label>
-                    <ul class="Furniture-header__menu">                 
+                    <ul class="Furniture-header__menu">
                         <li><a href="#">Мебель</a></li>
                         <li><a href="#">Освещение</a></li>
                         <li><a href="#">Текстиль</a></li>
@@ -177,7 +177,7 @@
             </div>           
         </div>
     </div>
-    <div class="container-3">
+    <div class="container-3" data-title= "">
         <div class="last_chance">
             <div class="title">
                 <h2>последний шанс</h2>
@@ -188,44 +188,45 @@
                 <a href="#">Диваны</a>
                 <a href="#">Кресла</a>
             </div>
+            
             <div class="chairs">
-                <div class="chairs_block">
+                <div class="chairs_block" data-title= "Купить">
                     <h4>Стул «Карамель»</h4>
                     <div class="costs">
                         <span>$195</span>
-                        <span></span>
+                        <strike> $245</strike>
                     </div>
                     <img src="img/chair1.png" alt="">
                 </div>
-                <div class="chairs_block">
+                <div class="chairs_block" data-title="Купить">
                     <h4>Стул «Облако»</h4>
                     <div class="costs">
                         <span>$200</span>
-                        <span></span>
+                        <strike> $250</strike>
                     </div>
                     <img src="img/chair2.png" alt="">
                 </div>
-                <div class="chairs_block">
+                <div class="chairs_block" data-title="Купить">
                     <h4>Стул «Сова»</h4>
                     <div class="costs">
                         <span>$240</span>
-                        <span></span>
-                    </div>
-                    <img src="img/chair3.png" alt="">
-                </div>
-                <div class="chairs_block">
-                    <h4>Стул «Мая»</h4>
-                    <div class="costs">
-                        <span>$280</span>
-                        <span></span>
+                        <strike> $260</strike>
                     </div>
                     <img src="img/chair4.png" alt="">
                 </div>
-                <div class="chairs_block">
+                <div class="chairs_block" data-title="Купить">
+                    <h4>Стул «Мая»</h4>
+                    <div class="costs">
+                        <span>$280</span>
+                        <strike> $330</strike>
+                    </div>
+                    <img src="img/chair3.png" alt="">
+                </div>
+                <div class="chairs_block" data-title="Купить">
                     <h4>Стул «Месси»</h4>
                     <div class="costs">
                         <span>$280</span>
-                        <span></span>
+                        <strike> $305</strike>
                     </div>
                     <img src="img/chair5.png" alt="">
                 </div>
@@ -233,7 +234,31 @@
         </div>
     </div>
  </div>      
-</section>  
+</section> 
+<footer>
+    <div class="footer_block">
+        <div class="inform">
+            <a href="#"> <img src="img/logo.svg" alt="Logo"></a>
+            <div class="menu">
+                <span>ДОСТАВКА</span>
+                <span>ОПЛАТА</span>
+                <span>КОНТАКТЫ</span>
+                <span>ГАРАНТИИ</span>
+            </div>        
+        </div>
+        <div class="contacts">
+            <div class="number">
+                 <img src="img/phone.svg" alt="phone">
+                 <a id = "num" href="#">+7(495) 205-28-14</a>
+            </div>
+            <div class="mail">
+                 <img src="img/mail.svg" alt="phone">
+                 <a href="#">callium@gmail.com</a>
+            </div>
+        </div>
+        <p>© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
+    </div>
+</footer> 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -263,6 +288,33 @@
             prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
             nextArrow: '<div class="slider-arrow slider-arrow__right" ></div>'       
           });
+        });
+        $(document).ready(function(){
+            $('.lastchance').slick({
+                infinity: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplaySpeed: 3000,
+                arrows: true,
+                responsive: [
+                {
+                    breakpoint: 1530,
+                    settings: {
+                    slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                    slidesToShow: 1, 
+                    centerMode: true,
+                    centerPadding: '90px'
+                    }
+                }
+                ],
+                prevArrow: '.novelty-prev-arrow',
+                nextArrow: '.novelty-next-arrow',
+            });
         });
      </script>
 </body>

@@ -150,13 +150,24 @@
          padding: 0
          content: ''
          background: url(../img/dots.svg) center no-repeat 
-         
+
+.container-3
+    position: relative
+    &::before      
+        content: attr(data-title) 
+        background: #FCEAE8
+        position: absolute 
+        top: -50px 
+        padding: 260px 670px
+        z-index: -1
+           
 .last_chance 
      width: 1170px
      margin: 0 auto
      display: flex
      flex-direction: column 
-     flex-wrap: wrap 
+     flex-wrap: wrap  
+     overflow: hidden   
      #line
          height: 4px 
          width: 90px
@@ -190,14 +201,85 @@
          display: flex 
          width: 1170px  
          justify-content: space-between
+         margin-bottom: 111px
+         flex-wrap: wrap
          &_block
+             position: relative
              width: 209px
-             height: 355px
-             overflow: hidden
+             height: 355px            
              display: flex 
              flex-direction: column 
+             align-items: self-end
              background-color: #FFFFFF
              box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+             border-top: 5px solid transparent            
+             &:hover::after 
+                 content: attr(data-title) 
+                 position: absolute
+                 bottom: -58px
+                 z-index:  99
+                 background: #303032
+                 padding: 18px 74px
+                 color: #ffff
+                 font: $font-OpenSans-md
+                 font-size: 16px
+                 text-align: center
+                 text-transform: uppercase
+                 line-height: 22px
+                 cursor: pointer
+                 
+             &:hover
+                 border-top: 5px solid #303032
+             &:nth-child(1) img
+                     position: absolute
+                     bottom: -107px
+                     left: 2%
+                     clip: rect(27px 205px 267px 51px)
+             &:nth-child(2) img
+                     position: absolute
+                     height: 400px
+                     bottom: -89px
+                     left: -24%
+                     clip: rect(74px 257px 312px 75px)
+             &:nth-child(3) img
+                     position: absolute
+                     bottom: -95px
+                     left: -2%
+                     clip: rect(18px 213px 248px 73px)
+             &:nth-child(4) img
+                     position: absolute
+                     height: 400px
+                     bottom: -122px
+                     left: -25%
+                     clip: rect(25px 260px 277px 73px)
+             &:nth-child(5) img
+                     position: absolute
+                     bottom: -90px
+                     left: 21%
+                     clip: rect(18px 165px 234px 13px)
+                     
+             .costs
+                  display: flex
+                  flex-direction: row
+                  align-items: center
+                  justify-content: space-between
+                  width: 125px
+                  margin-left: 23px                      
+                  strike                   
+                     font: $font-OpenSans-lg
+                     font-size: 16px
+                     color: #303032
+                     opacity: 50%
+             h4
+                 padding-top: 27px
+                 padding-bottom: 15px
+                 font: $font-OpenSans-md
+                 font-size: 16px
+                 padding-left: 23px
+                 color: #000000
+             span
+                 font: $font-OpenSans-lg
+                 
 
   
 

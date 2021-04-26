@@ -3,6 +3,9 @@
 @media screen and (max-width: 1920px)
      .container-1
          background: linear-gradient(to right, #F9FDFF 63.1%,  #FCEAE8 48%)
+     .container-3
+         &::before       
+             padding: 260px 500px
 
 @media screen and (max-width: 1440px)
      .container-1
@@ -14,7 +17,9 @@
              left: 20%
          &__right
              right: 20%
-         
+     .container-3
+         &::before       
+             padding: 260px 370px     
 
 @media screen and (max-width: 1024px)
      .container, .header-menu  
@@ -50,7 +55,18 @@
              left: 15%
          &__right
              right: 15%
-
+     .last_chance 
+         width: 900px
+         .chairs 
+             width: 900px 
+             justify-content: space-around
+             &_block:nth-child(5) 
+                 margin-top: 15px
+     .footer_block
+         width: 900px
+     .container-3
+         &::before       
+             padding: 290px 350px
 
 @media screen and (max-width: 768px)
      .container, .header-menu  
@@ -89,6 +105,21 @@
              left: 10%
          &__right
              right: 10%
+     .last_chance 
+         width: 650px
+         .chairs 
+             width: 650px 
+             justify-content: space-around
+             &_block:nth-child(5),  &_block:nth-child(4)
+                 margin-top: 10px
+     .footer_block
+         width: 650px
+         .inform
+             .menu
+                 width: 400px
+     .container-3
+         &::before       
+             padding: 290px 300px
 
 @media screen and (max-width: 425px) 
      #btn-menu + label
@@ -200,7 +231,44 @@
          display: none
      .comments
          display: none    
- 
+     .last_chance 
+         width: 350px
+         .chairs 
+             width: 350px 
+             justify-content: space-around
+             &_block
+                 margin-top: 10px
+     footer
+         height: 400px
+     .footer_block
+         position: relative
+         width: 300px
+         .inform
+             justify-content: space-between
+             align-items: center
+             .menu
+                 position: absolute
+                 width: 200px 
+                 bottom: 0
+                 margin-bottom: 60px
+                 span
+                    margin-bottom: 20px 
+         .contacts
+             width: 240px
+             height: 100px
+             display: flex
+             flex-direction: column
+             justify-content: space-evenly
+             margin-bottom: 100px
+             border: none
+         p
+            border-top:  1px solid rgba(0, 0, 0, 0.2)   
+            text-align: center
+     .container-3
+         &::before       
+             padding: 290px 212px
+
+
 
          
 
@@ -250,8 +318,14 @@
                  padding-bottom: 16px
                  text-align: center
                  img
-                      padding: 0 40px
-             
+                      padding: 0 40px 
+     .last_chance 
+         width: 340px
+         .chairs 
+             width: 340px 
+     .container-3
+         &::before       
+             padding: 290px 187px         
 
 @media screen and (max-width: 320px)
      #btn-menu:checked + label + .Furniture-header__menu
@@ -297,6 +371,13 @@
                  text-align: center
                  img
                       padding: 0 30px
+     .last_chance 
+         width: 290px
+         .chairs 
+             width: 290px 
+     .container-3
+         &::before       
+             padding: 290px 160px
 
 
 
