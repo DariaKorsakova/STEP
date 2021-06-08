@@ -1,0 +1,9 @@
+int add5(int num) {
+    __asm {
+        mov     eax, DWORD PTR num
+        add     eax, 5
+    }
+    return;
+}
+
+print( add5(10) );
